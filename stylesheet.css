@@ -1,131 +1,455 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+/* --- Google Fonts Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap');
+
+/* --- Allgemeine Einstellungen --- */
+body {
+    font-family: 'Lato', sans-serif; /* Schlanke, moderne Schrift für den Fließtext */
+    line-height: 1.7; /* Mehr Zeilenabstand für bessere Lesbarkeit */
+    color: #555; /* Gedämpftes Dunkelgrau */
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8; /* Sehr helles, fast weißes Grau als Hintergrund */
 }
 
 a {
-  color: #1772d0;
-  text-decoration: none;
+    color: #007bff; /* Professionelles, dezentes Blau für Links */
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: none;
+    color: #0056b3; /* Dunklerer Blauton beim Hover */
+    text-decoration: underline;
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+/* --- Hauptcontainer --- */
+.main-container {
+    max-width: 960px; /* Breiterer Hauptcontainer für mehr Platz */
+    margin: 40px auto; /* Mehr Abstand oben/unten */
+    padding: 40px; /* Mehr Innenabstand */
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1); /* Deutlicherer, weicherer Schatten */
+    border-radius: 12px; /* Abgerundete Ecken */
 }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+/* --- Sektionen --- */
+.section {
+    margin-bottom: 60px; /* Einheitlicher Abstand zwischen Sektionen */
 }
 
-heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+/* --- Überschriften --- */
+h1 {
+    font-family: 'Poppins', sans-serif; /* Kräftige, klare Schrift für Hauptüberschrift */
+    text-align: center;
+    color: #222; /* Tiefes Schwarz */
+    margin-bottom: 30px;
+    font-size: 3.2em; /* Größer für mehr Prägnanz */
+    font-weight: 700;
+    letter-spacing: -0.03em; /* Minimal engerer Buchstabenabstand */
+    line-height: 1.2;
 }
 
-papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700
+h2 { /* Für die Sektionen-Überschriften */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2em; /* Größer und prägnanter */
+    margin-top: 60px; /* Viel Abstand nach oben */
+    margin-bottom: 30px;
+    color: #222;
+    text-align: left; /* Überschriften linksbündig */
+    padding-bottom: 15px;
+    border-bottom: 2px solid #EEE; /* Dezente, dünne Trennlinie */
+    font-weight: 600;
 }
 
-name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+h3 { /* Für Publikationstitel, jetzt als h3 */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.15em;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    color: #333;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+
+/* --- Hero Sektion (About) --- */
+.hero-section {
+    padding-top: 0;
+    margin-bottom: 60px;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Vertikal zentriert */
+    gap: 50px; /* Viel Abstand zwischen Bild und Text */
+    justify-content: center; /* Horizontal zentriert, wenn Platz ist */
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.profile-image {
+    flex-shrink: 0;
+    width: 250px; /* Feste Größe für das Profilbild */
+    height: 250px;
+    border-radius: 50%; /* Kreisform */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Prägnanter Schatten */
+    transition: transform 0.3s ease;
+    margin: 0 auto; /* Zentriert im Fall von Umbruch */
 }
 
-span.highlight {
-  background-color: #ffffd0;
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Stellt sicher, dass das Bild den Kreis ausfüllt */
+    display: block;
+}
+
+.profile-image:hover {
+    transform: translateY(-5px); /* Leichter Schwebeeffekt */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.profile-info {
+    flex-grow: 1;
+    max-width: 600px; /* Begrenzt die Breite des Textes */
+    text-align: left;
+}
+
+.profile-info h1 { /* Stellt sicher, dass h1 im Profilbereich linksbündig ist */
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 2.8em; /* Etwas kleiner als der globale h1 für den Headerbereich */
+}
+
+/* --- Navigationsleiste --- */
+.navbar {
+    background-color: #222; /* Dunkler Hintergrund */
+    padding: 20px 0; /* Mehr Padding */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Abstand zwischen Navigation und Social Icons */
+    align-items: center;
+    max-width: 960px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navbar nav {
+    display: flex;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: #E0E0E0; /* Helles Grau */
+    font-weight: 500;
+    padding: 12px 25px;
+    border-radius: 8px; /* Leicht abgerundet */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #333; /* Dunkleres Grau beim Hover */
+    color: #FFFFFF;
+}
+
+.social-links-header { /* Social Icons in der Navbar */
+    display: flex;
+    gap: 15px;
+}
+
+.social-links-header .social-icon img {
+    width: 24px; /* Kleinere Icons in der Navbar */
+    height: 24px;
+    filter: brightness(180%); /* Weiß machen */
+    transition: transform 0.2s ease;
+}
+
+.social-links-header .social-icon img:hover {
+    transform: translateY(-2px) scale(1.1); /* Leichter Effekt */
+}
+
+/* --- Publikationen (Grid-Layout) --- */
+.publication-grid {
+    /* *** WICHTIGE ÄNDERUNG HIER *** */
+    grid-template-columns: 1fr; /* Nur eine Spalte, sodass jedes Element eine ganze Zeile einnimmt */
+    display: grid; /* Beibehalten von Grid für die Struktur */
+    gap: 30px; /* Abstand zwischen den Karten */
+}
+
+.publication-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden; /* Stellt sicher, dass das Bild innerhalb der Rundung bleibt */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.publication-details {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.publication-image {
+    float: left; /* Lässt den Text um das Bild herumfließen */
+    width: 140px; /* Feste Breite für das Bild */
+    height: 100px; /* Feste Höhe für das Bild */
+    overflow: hidden; /* Keep overflow hidden for border-radius */
+    border-radius: 8px; /* Leicht abgerundete Ecken für das Bild selbst */
+    margin-right: 20px; /* Abstand zum Text rechts davon */
+    margin-bottom: 10px; /* Abstand zum Text darunter, wenn es umbricht */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Dezenter Schatten für das Bild */
+    flex-shrink: 0; /* Verhindert, dass das Bild schrumpft in Flex-Containern */
+}
+
+.publication-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Zeigt das gesamte Bild an, kein Cropping */
+    background-color: #f0f0f0; /* Hintergrundfarbe für leere Bereiche, wenn object-fit: contain */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.publication-item:hover .publication-image img {
+    transform: scale(1.05); /* Leichter Zoom beim Hover der Karte */
+}
+
+.publication-details::after { /* Clearfix, um float korrekt zu behandeln */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.publication-details h3 { /* Publikationstitel (jetzt h3) */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.authors {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.journal {
+    font-style: italic;
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 15px; /* Adjust spacing since abstract button is gone */
+}
+
+.links {
+    margin-top: auto; /* Schiebt Links und Button nach unten */
+    margin-bottom: 0; /* No margin below links if no abstract button */
+}
+
+.links a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #007bff; /* Links im Akzentblau */
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Removed .toggle-description-btn styling */
+/* Removed .publication-abstract styling */
+
+
+/* --- Patente --- */
+.patent-list {
+    list-style: none; /* Entfernt die Standardlistenpunkte */
+    padding-left: 0;
+    margin-top: 25px;
+}
+
+.patent-list li {
+    margin-bottom: 12px;
+    font-size: 0.95em;
+    position: relative;
+    padding-left: 25px; /* Platz für benutzerdefinierte Bullets */
+}
+
+.patent-list li::before {
+    content: '•'; /* Benutzerdefinierter Punkt */
+    color: #007bff; /* Blauer Punkt */
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* --- Talks / Lectures / Podcasts --- */
+.talk-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: flex-start;
+}
+
+.talk-item:last-child {
+    border-bottom: none;
+}
+
+.talk-image {
+    float: left; /* Lässt den Text um das Bild herumfließen */
+    width: 140px; /* Feste Breite für das Bild (identisch mit publications) */
+    height: 100px; /* Feste Höhe für das Bild (identisch mit publications) */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.talk-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Zeigt das gesamte Bild an, kein Cropping */
+    background-color: #f0f0f0; /* Hintergrundfarbe für leere Bereiche */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.talk-image:hover {
+    transform: translateY(-3px);
+}
+
+.talk-details {
+    flex-grow: 1;
+    min-width: 350px;
+}
+
+.talk-details::after { /* Clearfix for talk details as well */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.talk-details h3 { /* Vortragstitel */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* --- Responsive Anpassungen --- */
+@media (max-width: 768px) {
+    .main-container {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .profile-info {
+        max-width: 100%;
+    }
+
+    .profile-info h1 {
+        text-align: center; /* H1 im Profilbereich auch zentrieren auf Mobil */
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .nav-container {
+        flex-direction: column; /* Navigation und Social Icons untereinander */
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-link {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    .social-links-header {
+        justify-content: center;
+    }
+
+    .publication-grid {
+        grid-template-columns: 1fr; /* Already 1fr, so no change needed here specifically for mobile */
+        gap: 25px;
+    }
+
+    .publication-item {
+        /* On mobile, stack image and text again for better readability */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .publication-image, .talk-image {
+        float: none; /* Remove float on mobile */
+        margin-right: 0; /* Remove margin-right */
+        margin-bottom: 15px; /* Add some space below image */
+        width: 100%; /* Go full width of its card */
+        max-width: 250px; /* But limit overall size */
+        height: 120px; /* Allow height to adjust slightly to fill with contain, or set a fixed height */
+    }
+
+    .publication-details, .talk-details {
+        min-width: unset;
+        width: 100%;
+        padding: 0 15px; /* Innenabstand für Text auf Mobil */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .publication-details::after, .talk-details::after { /* No need for clearfix on mobile when stacking */
+        content: none;
+    }
+
+    .patent-list {
+        padding-left: 20px;
+    }
 }
